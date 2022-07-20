@@ -1,0 +1,24 @@
+@import "../../assets/scss/variables.scss";
+
+.layout_container {
+  background-color: #f7f7f9;
+  .dashboard_layout_main {
+    display: flex;
+    .main_layout {
+      width: 100%;
+      height: calc(100vh - 70px);
+      padding: 3% 2% 1% 2%;
+    }
+    .heading_Title {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        font-weight: 600;
+        color: $font_color;
+      }
+      span{
+        color: $font_color;
+      }
+    }
+  }
+}

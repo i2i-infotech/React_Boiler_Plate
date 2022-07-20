@@ -1,0 +1,31 @@
+@import "../../assets/scss/variables.scss";
+
+.dashboard_sidebar_continer {
+  width: 250px;
+  background-color: #ffffff;
+  height: calc(100vh - 70px);
+  .link_container {
+    margin-top: 8%;
+    .link_data {
+      display: flex;
+      // margin-left: 8%;
+      // margin-top: 5%;
+      // margin-bottom: 8%;
+      padding: 5% 0 8% 8%;
+      .link_name {
+        margin-left: 12%;
+        a {
+          text-decoration: none !important;
+          color: #132649 !important;
+        }
+      }
+    }
+    .active {
+      background-color: $drawer_link;
+    }
+  }
+}
+
+.notActive {
+  color: pink;
+}

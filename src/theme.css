@@ -1,0 +1,38 @@
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 4px 16px !important;
+  }
+  .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 4px 16px !important;
+  }
+  .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label{
+    font-size: 12px;
+  }
+  .css-hdw1oc{
+    display: none;
+  }
+
+.css-f3jnds-MuiDataGrid-columnHeaders {
+  background-color: #F7F7F9 !important;
+  /* min-height: 44px !important;
+  max-height: 44px !important; */
+}
+
+.css-17jjc08-MuiDataGrid-footerContainer{
+  background-color: white !important;
+}
+
+.css-r11z79-MuiDataGrid-root{
+  border: none !important;
+}
+.css-1paqhuy-MuiDataGrid-root .MuiDataGrid-cell{
+  border: none !important;
+}
+
+.css-1jbbcbn-MuiDataGrid-columnHeaderTitle{
+  font-weight: 600 !important;
+  color: #132649 !important;
+}
+
+.css-1paqhuy-MuiDataGrid-root .MuiDataGrid-row{
+  background-color: white !important;
+}

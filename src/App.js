@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <HelmetProvider>
-        <Helmet titleTemplate="%s | " defaultTitle="Avani Systems"></Helmet>
+        <Helmet titleTemplate="%s | " defaultTitle="Map Dashboard"></Helmet>
       </HelmetProvider>
       <Routes />
     </>
