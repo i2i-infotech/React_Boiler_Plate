@@ -5,13 +5,13 @@ import React, {
   useLayoutEffect,
   useState,
 } from "react";
-// import Header from "../Header";
-// import Footer from "../Footer";
+// import Header from "Header";
+// import Footer from "Footer";
 import { Outlet, useLocation } from "react-router-dom";
 
 import { connect } from "react-redux";
 
-// import GlobalNotification from "../GlobalNotification";
+// import GlobalNotification from "GlobalNotification";
 import { bindActionCreators } from "redux";
 
 function Layout(props) {

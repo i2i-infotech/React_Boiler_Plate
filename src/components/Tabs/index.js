@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Tab, Tabs } from "react-bootstrap";
-import Login from "../../pages/Login";
-import Registration from "../../pages/Registration";
+import Login from "pages/Login";
+import Registration from "pages/Registration";
 import styles from "./index.module.scss";
 
 function LoginTab() {

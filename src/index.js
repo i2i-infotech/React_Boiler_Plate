@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import "react-notifications/lib/notifications.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
@@ -16,11 +16,11 @@ const configureStore = configureAppStore();
 addAuthTokenInterceptor(configureStore.store);
 const AppWithStore = () => {
   return (
-      <StoreProvider store={configureStore.store}>
-        <PersistGate loading={<></>} persistor={configureStore.persistor}>
-          <App />
-        </PersistGate>
-      </StoreProvider>
+    <StoreProvider store={configureStore.store}>
+      <PersistGate loading={<></>} persistor={configureStore.persistor}>
+        <App />
+      </PersistGate>
+    </StoreProvider>
   );
 };
 

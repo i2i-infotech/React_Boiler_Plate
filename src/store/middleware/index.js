@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import isLocalStorageAvailable from "../../utils/Storage/isLocalStorageAvailable";
-import * as notification from "../notification";
+import isLocalStorageAvailable from "utils/Storage/isLocalStorageAvailable";
+import * as notification from "store/notification";
 
 const apiMiddleware = (store) => (next) => (action) => {
   switch (action.type) {

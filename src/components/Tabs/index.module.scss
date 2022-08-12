@@ -1,10 +1,8 @@
-@import "../../assets/scss//style.scss";
-
+@import "assets/scss/style.scss";
 .login_container {
     display: flex;
     justify-content: center;
     padding-top: 14.5rem;
-
     .login_Box {
         background-color: white;
         width: 360px;
@@ -16,7 +14,7 @@
         font-size: 1rem;
         border-radius: 0.5rem;
     }
-    @media (max-width : 350px) {
+    @media (max-width: 350px) {
         .login_Box {
             padding: 1rem;
         }

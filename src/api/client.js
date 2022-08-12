@@ -1,5 +1,5 @@
 import axios from "axios";
-import isLocalStorageAvailable from "../utils/Storage/isLocalStorageAvailable";
+import isLocalStorageAvailable from "utils/Storage/isLocalStorageAvailable";
 // client.js api
 const baseURL =
   process.env.REACT_APP_SERVER_URL || "http://192.168.29.187:6001";

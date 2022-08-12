@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import placeHolderIMG from "../../../assets/images/Spinner.gif";
+import placeHolderIMG from "assets/images/Spinner.gif";
 
 const placeHolder = "/assets/images/Spinner.gif";
 const placeHolderError = "/assets/images/placeHolder404.png";
