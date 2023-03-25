@@ -69,8 +69,4 @@ function Layout(props) {
   );
 }
 
-const mapStateToProps = (state) => {};
-
-const mapDispatchToProps = (dispatch) => {};
-
-export default memo(connect(mapStateToProps, mapDispatchToProps)(Layout));
+export default memo(Layout);

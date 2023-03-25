@@ -1,15 +1,16 @@
+import React from "react";
 // Layout
-import Layout from "common/Layout";
+import Layout from "../common/Layout";
 
 // Pages
-import LoginTab from "components/Tabs";
-import Home from "pages/Home";
-import Login from "pages/Login";
+import LoginTab from "../components/Tabs";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
 
 const routes = [
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
     children: [
       { path: "", element: <Home /> },
       {

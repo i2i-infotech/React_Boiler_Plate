@@ -1,5 +1,7 @@
+import React from "react";
+
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
 import { Helmet, HelmetProvider } from "react-helmet-async";

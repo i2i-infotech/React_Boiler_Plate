@@ -1,7 +1,8 @@
 {
-  "name": "avnisystems",
+  "name": "reactboiler",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -12,9 +13,9 @@
     "font-awesome": "^4.7.0",
     "formik": "^2.2.9",
     "http-proxy-middleware": "^2.0.4",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.2.3",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18.2.0",
     "react-helmet-async": "^1.2.3",
     "react-notifications": "^1.7.3",
     "react-redux": "^7.2.6",
@@ -30,7 +31,48 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@hot-loader/react-dom": "^17.0.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "chalk": "^4.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "cssnano": "^5.0.8",
+    "dotenv-webpack": "^8.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jsconfig-to-webpack-alias": "^1.0.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^8.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-refresh": "^0.10.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.7",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^5.52.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-nano": "^1.1.1",
+    "webpack-plugin-serve": "^1.5.0"
+  },
   "scripts": {
+    "dev": "yarn prebuild && wp --env dev --stats-error-details",
+    "dev:bundleanalyzer": "yarn prebuild && yarn dev --addons bundleanalyzer",
+    "prebuild": "rimraf dist",
+    "prod:build": "cross-env NODE_ENV=production wp --env prod",
+    "build:bundleanalyzer": "yarn build --addons bundleanalyzer",
+    "production:build": "react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +82,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "node_modules/"
     ]
   },
   "browserslist": {
