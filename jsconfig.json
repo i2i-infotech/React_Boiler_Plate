@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
-    "allowJs": true
-  }
+    "allowJs": true,
+    "target": "esnext",
+    "module": "commonjs"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

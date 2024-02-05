@@ -37,9 +37,9 @@
   }
 }
 
-.form-control{
+.form-control {
   padding: 14px 13px;
-  border: .0625rem solid #dbe2ed;
+  border: 0.0625rem solid #dbe2ed;
   color: #363636;
 }
 
@@ -72,6 +72,5 @@
   left: 0;
   right: 0;
   width: 50%;
-  background: #a368ff !important;
+  /* background: #a368ff !important; */
 }
-
