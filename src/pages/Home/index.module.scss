@@ -1,19 +1,13 @@
 @import "../../assets/scss/style.scss";
-.home_container {
-  background-color: white;
-  //   height: 100vh;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   color: $sky_blue;
 
-  .btn {
-    padding: 4px;
-    margin: 0 10px;
-    font-size: 16px;
-  }
-
-  .counter {
-    font-size: 3rem;
-  }
+.title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: 700 !important;
+}
+.box_container{
+  padding: 16px;
 }

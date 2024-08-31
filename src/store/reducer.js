@@ -1,7 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import authReducer from "./auth";
 
-import userReducer from "./user";
+import autherReducer from "./auther";
 
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 import { persistReducer } from "redux-persist";
@@ -17,7 +17,7 @@ const encryptor = encryptTransform({
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["auth", "user"],
+  whitelist: ["auth", "auther"],
   // blacklist: ["auth"],
   // stateReconciler: hardSet,
   transforms: [encryptor],
@@ -25,7 +25,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  user: userReducer,
+  auther: autherReducer,
   
 });
 export default persistReducer(persistConfig, rootReducer);
